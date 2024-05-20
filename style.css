@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f9fafb;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  padding: 18px;
+}
+header h2 {
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.hero-box {
+  width: 500px;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.hero-box {
+  text-align: center;
+  color: #fff;
+}
+.hero-box h1 {
+  padding-block: 25px;
+}
+
+.dice-val-img {
+  width: 100px;
+  margin-block: 16px;
+  -webkit-transition: -webkit-transform 1s;
+}
+
+.dice-val-img:hover {
+  -webkit-transform: rotate(360deg) translateZ(0);
+}
+
+.dice-val-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.play-btn {
+  margin-block: 30px;
+  padding: 8px 36px;
+  background: antiquewhite;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgb(188 74 74 / 10%) 0px 8px 24px, rgb(18 18 33 / 10%) 0px 16px 48px;
+  transition: 0.3s ease-in-out;
+}
+
+.play-btn:hover {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgb(188 74 74 / 10%) 0px 8px 24px, rgb(18 18 33 / 10%) 0px 16px 48px;
+  cursor: pointer;
+}
